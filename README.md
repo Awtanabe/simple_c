@@ -5,6 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
+# Todo 
+
+schdduleをplane controllerで保存できるようにパラメーターを加工する
+
 
 # GoldPlace
 name
