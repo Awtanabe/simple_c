@@ -10,6 +10,7 @@ class PlansController < ApplicationController
   # GET /plans/1
   # GET /plans/1.json
   def show
+    @schedules = Schedule.all
   end
 
   # GET /plans/new

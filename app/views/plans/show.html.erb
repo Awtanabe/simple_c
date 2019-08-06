@@ -9,12 +9,15 @@
   <strong>Price:</strong>
   <%= @plan.price %>
 </p>
-  <%= month_calendar events: @plan.schedules do |date, meetings| %>
+ 
+  <%= month_calendar events: @plan.schedules  do |date, meetings| %>
+
   <%= date %>
-  <%debugger%>
+
   <% meetings.each do |meeting| %>
-    <div>
-      <%= meeting.name %>
+ 
+    <div class="saasas">
+      <%= meeting.start_time %>
     </div>
   <% end %>
 <% end %>
