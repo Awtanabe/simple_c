@@ -7,6 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Prefecture</th>
+      <th>Plan</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,12 @@
       <tr>
         <td><%= gold_place.name %></td>
         <td><%= gold_place.prefecture %></td>
+        <%gold_place.plans.each do |plan|%>
+         <td><%= plan.name %></td>
+         <td><%= plan.price %></td>
+        <%end%>
+      </tr>
+      <tr>
         <td><%= link_to 'Show', gold_place %></td>
         <td><%= link_to 'Edit', edit_gold_place_path(gold_place) %></td>
         <td><%= link_to 'Destroy', gold_place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
