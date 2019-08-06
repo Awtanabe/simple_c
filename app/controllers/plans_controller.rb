@@ -24,8 +24,10 @@ class PlansController < ApplicationController
   # POST /plans
   # POST /plans.json
   def create
+    debugger
     @plan = Plan.new(plan_params)
     @plan.gold_places << GoldPlace.find(params[:plan][:gold_place_ids])
+    @plan.schedules << Schedule.create(start_time: params[:plan][:start_time], end_time: params[:plan][:end_time])
     respond_to do |format|
       if @plan.save
         format.html { redirect_to @plan, notice: 'Plan was successfully created.' }

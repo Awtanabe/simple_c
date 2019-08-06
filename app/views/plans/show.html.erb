@@ -11,7 +11,7 @@
 </p>
   <%= month_calendar events: @plan.schedules do |date, meetings| %>
   <%= date %>
-
+  <%debugger%>
   <% meetings.each do |meeting| %>
     <div>
       <%= meeting.name %>

@@ -21,6 +21,16 @@
     <%= form.text_field :price %>
   </div>
 
+  <%= form.fields_for :started_at do |s| %>
+    <div class="field">
+    <%= s.label :開始時間 %>
+    <%= s.datetime_select :start_time %>
+    <div class="field">
+    <%= s.label :終了時間 %>
+    <%= s.datetime_select :end_time %>
+  </div>
+
+  <%end%>
   <div class="field">
     <%= form.label :ゴルフ場 %>
     <%= form.select :gold_place_ids,  GoldPlace.all.map{ |gp| [gp.name, gp.id]} %>
