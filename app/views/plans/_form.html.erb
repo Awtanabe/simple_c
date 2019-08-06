@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :ゴルフ場 %>
-    <%= form.select :gold_place_id,  GoldPlace.all.map{ |gp| [gp.name, gp.id]} %>
+    <%= form.select :gold_place_ids,  GoldPlace.all.map{ |gp| [gp.name, gp.id]} %>
   </div>
   <div class="actions">
     <%= form.submit %>

@@ -16,7 +16,9 @@
     <% @plans.each do |plan| %>
       <tr>
         <td><%= plan.name %></td>
-        <td><%= plan.gold_place.name %></td>
+         <%unless plan.gold_places.count == 0 %>
+        <td><%= plan.gold_places.first.name %></td>
+        <%end%>
         <td><%= plan.price %></td>
         <td><%= link_to 'Show', plan %></td>
         <td><%= link_to 'Edit', edit_plan_path(plan) %></td>
@@ -25,6 +27,7 @@
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 

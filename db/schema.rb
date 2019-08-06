@@ -42,8 +42,6 @@ ActiveRecord::Schema.define(version: 2019_08_06_035924) do
     t.string "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "gold_place_id"
-    t.index ["gold_place_id"], name: "index_plans_on_gold_place_id"
   end
 
   create_table "schedules", force: :cascade do |t|

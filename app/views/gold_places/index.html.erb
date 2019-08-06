@@ -18,7 +18,7 @@
         <td><%= gold_place.name %></td>
         <td><%= gold_place.prefecture %></td>
         <%gold_place.plans.each do |plan|%>
-         <td><%= plan.name %></td>
+         <td><%= link_to plan.name, "plans/#{plan.id}"%></td>
          <td><%= plan.price %></td>
         <%end%>
       </tr>
