@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gold_place.name %>
+</p>
+
+<p>
+  <strong>Prefecture:</strong>
+  <%= @gold_place.prefecture %>
+</p>
+
+<%= link_to 'Edit', edit_gold_place_path(@gold_place) %> |
+<%= link_to 'Back', gold_places_path %>
