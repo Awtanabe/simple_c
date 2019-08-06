@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+# GoldPlace
+name
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+# Plan
 
-* How to run the test suite
+# gold_plan 中間テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+gold_place_od
+plan_id
 
-* Deployment instructions
+# Schedule
 
-* ...
+# PlanSchedule 中間テーブル
+
